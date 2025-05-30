@@ -6,7 +6,7 @@ Welcome to my **JavaScript learning repository**! This is where I’m building m
 
 ## 👩‍💻 About Me
 
-Hi! I'm **Sourav Kumar**, a B.Tech student at **UCET Hazaribagh (CSE branch)**, graduating in **2028**. While my background is in Electronics and Communication, I’m deeply passionate about **software development** and actively transitioning into the tech world.
+Hi! I'm **Sourav Kumar**, a B.Tech student at **UCET Hazaribagh (CSE branch)**, graduating in **2028**. While my background is in Computer Science and Engineering, I’m deeply passionate about **software development** and actively transitioning into the tech world.
 
 I’m currently learning:
 - 📌 **Java + DSA** (GeeksforGeeks, Self-paced)
