@@ -285,7 +285,7 @@ if (height) {
 }
 */
 
-
+/*
 // equality Operators
 const age = '18';
 if (age === 18) {
@@ -315,8 +315,32 @@ if (favourite === 23) { // 23 === 23  -> False
 if (favourite !== 23) {
     console.log("Why not 23 ?");
 }
+*/
+
+
+/*
+// AND Operators 
+const hasDriversLicense = true;
+const hasGoodVision = false;
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+
+const hasDriversLicense1 = false;
+const hasGoodVision1 = false;
+console.log(hasDriversLicense1 && hasGoodVision1);
+console.log(hasDriversLicense1 || hasGoodVision1);
+
+const hasDriversLicense2 = false;
+const hasGoodVision2 = true;
+console.log(hasDriversLicense2 && hasGoodVision2);
+console.log(hasDriversLicense2 || hasGoodVision2);
+
+const hasDriversLicense3 = true;
+const hasGoodVision3 = true;
+console.log(hasDriversLicense3 && hasGoodVision3);
+console.log(hasDriversLicense3 || hasGoodVision3);
+*/
 
 
 
-
-//
+// Coding Challenges 3
