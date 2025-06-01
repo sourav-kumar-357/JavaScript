@@ -16,7 +16,7 @@ if (hasDriversLicense) {
 */
 
 
-
+/*
 // Functions
 function logger() {
     console.log('My name is Jonas');
@@ -37,3 +37,23 @@ console.log(fruitProcessors(5, 0));
 
 const appleOrangeJuice = fruitProcessors(2, 4);
 console.log(appleOrangeJuice);
+*/
+
+
+/*
+function calcAge1(birthYear) {
+    const age = 2037 - birthYear;
+    return age;
+}
+
+console.log(calcAge1(1991));
+
+const calAge2 = function (birthYear) {
+    return 2025 - birthYear;
+}
+
+console.log(calAge2(2006));
+*/
+
+
+// Arrow Function
