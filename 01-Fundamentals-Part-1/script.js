@@ -201,3 +201,39 @@ console.log(century);
 */
 
 
+//Coding Challenges Part 01
+// Solving by taking data - 01
+const marksWeight1 = 78;
+const marksHeight1 = 1.69;
+
+const johnWeight1 = 92;
+const JohnHeight1 = 1.95;
+
+let markBMI1 = marksWeight1/(marksHeight1 ** 2);
+let johnBMI1 = johnWeight1/(JohnHeight1 ** 2);
+
+if (johnBMI1 > markBMI1) {
+    console.log("John has a higher BMI index (" + johnBMI1 + ") than marks BMI (" + markBMI1 + ")");
+} else {
+    console.log("Mark has a higher BMI index (" + markBMI1 + ") than Johns BMI (" + johnBMI1 + ")");
+}
+
+
+// Solving by taking data - 01
+const marksWeight2 = 95;
+const marksHeight2 = 1.88;
+
+const johnWeight2 = 85;
+const JohnHeight2 = 1.76;
+
+let markBMI2 = marksWeight2/(marksHeight2 ** 2);
+let johnBMI2 = johnWeight2/(JohnHeight2 ** 2);
+
+if (johnBMI2 > markBMI2) {
+    console.log("John has a higher BMI index (" + johnBMI2 + ") than marks BMI (" + markBMI2 + ")");
+} else {
+    console.log("Mark has a higher BMI index (" + markBMI2 + ") than Johns BMI (" + johnBMI2 + ")");
+}
+
+
+
