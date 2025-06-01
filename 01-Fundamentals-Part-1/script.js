@@ -67,3 +67,15 @@ console.log(typeof isIsland);
 console.log(typeof language);
 */
 
+// Types of Declaring a variables
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+birthYear = 2000;
+
+var job = "Programmer";
+job = "Teachers";
+
+
+//
