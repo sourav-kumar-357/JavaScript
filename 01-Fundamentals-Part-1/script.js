@@ -22,3 +22,11 @@ let Job1 = 'programmer';
 let Job2 = 'Teacher';
 
 console.log(myCurrentJob);
+
+let Country = "India";
+let Continent = "Asia";
+let population = "300 M";
+
+console.log("Continent is " + Continent);
+console.log("Country is " + Country);
+console.log("The population is " + population);
