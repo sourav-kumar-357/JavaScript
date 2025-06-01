@@ -157,7 +157,7 @@ let markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markBMI2, johnBMI2, markHigherBMI2);
 */
 
-
+/*
 // Strings 
 const firstName = "Sourav";
 const job = "Teacher";
@@ -176,4 +176,14 @@ console.log('String with \n multiple\n line');
 console.log(`This is a
 multiple line 
 comment`);
+*/
 
+
+const age = 12;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+    console.log("Sarah can start driving License");
+} else {
+    console.log("sarah can have a driving License after " + (18 - age) + " years");
+}
