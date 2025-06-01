@@ -126,6 +126,8 @@ const averageAge = (ageJonas + ageSarah)/2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
+
+/*
 //Coding Challenges Part 01
 // Solving by taking data - 01
 const marksWeight1 = 78;
@@ -153,3 +155,25 @@ let johnBMI2 = johnWeight2/(JohnHeight2 ** 2);
 
 let markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markBMI2, johnBMI2, markHigherBMI2);
+*/
+
+
+// Strings 
+const firstName = "Sourav";
+const job = "Teacher";
+const birtYear = 2006;
+const year = 2025;
+
+const jonas = "I am " + firstName + ", a " + (year - birtYear) + " years old person, with a profession of " + job;
+console.log(jonas);
+
+const jonasNew = `I am ${firstName}, a ${year - birtYear} years old ${job}`;
+console.log(jonasNew);
+
+console.log(`Just a normal String......`);
+
+console.log('String with \n multiple\n line');
+console.log(`This is a
+multiple line 
+comment`);
+
