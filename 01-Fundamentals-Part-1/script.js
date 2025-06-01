@@ -178,7 +178,8 @@ multiple line
 comment`);
 */
 
-
+/*
+// if and else block 
 const age = 12;
 const isOldEnough = age >= 18;
 
@@ -187,3 +188,16 @@ if (isOldEnough) {
 } else {
     console.log("sarah can have a driving License after " + (18 - age) + " years");
 }
+
+
+let century;
+const birthYear = 1991;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+
+
