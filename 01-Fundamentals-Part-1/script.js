@@ -342,7 +342,7 @@ console.log(hasDriversLicense3 || hasGoodVision3);
 */
 
 
-
+/*
 // Coding Challenges 3
 const scoreDolphins = (97+112+80)/3;
 const scoreKoalas = (100+95+50)/3;
@@ -356,4 +356,36 @@ if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else if (scoreDolphins == scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100);
 else {
     console.log('No one win the trophy');
+}
+*/
+
+
+
+// Switch Statements 
+const day = prompt("Please enter the day");
+
+switch (day) {
+    case "monday":
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+
+    case "tuesday":
+        console.log("Prepare theory videos");
+        break;
+
+    case "wednesday":
+    case "thursday":
+        console.log("Write code examples");
+
+    case "friday":
+        console.log("Record videos");
+
+    case "saturday":
+    case "sunday":
+        console.log("Enjoy the weekends");
+
+    default:
+        console.log("Not a valid day");
+        break;
 }
