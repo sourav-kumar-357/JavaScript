@@ -262,7 +262,7 @@ n = n - 1;
 console.log(n);
 */
 
-
+/*
 // 5 falsy values : 0, '', undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -283,4 +283,40 @@ if (height) {
 } else {
     console.log("The height is not defined");
 }
+*/
 
+
+// equality Operators
+const age = '18';
+if (age === 18) {
+    console.log("You just became an adult : D(Strict)");
+} 
+
+if (age == 18) {
+    console.log("You just Became an Adult : D(Loose)");
+}
+
+const favourite = Number(prompt("What is your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+
+// Difference between == and ===
+if (favourite === 23) { // 23 === 23  -> False
+    console.log('Cool, 23 is an amazing number!');
+} else if (favourite === 7) {
+    console.log("7 is also a cool number !");
+}  else if (favourite === 9) {
+    console.log("7 is also a cool number !");
+}  else {
+    console.log("Number is not 23 or 7 or 9");
+}
+
+if (favourite !== 23) {
+    console.log("Why not 23 ?");
+}
+
+
+
+
+//
