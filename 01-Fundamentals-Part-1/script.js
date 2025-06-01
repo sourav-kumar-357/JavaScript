@@ -262,3 +262,25 @@ n = n - 1;
 console.log(n);
 */
 
+
+// 5 falsy values : 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+const money = 0; // here this zero get converted to False as 0 is a falsy value
+if (money) {
+    console.log("Don't spend it all ");
+} else {
+    console.log("You should get a job");
+}
+
+// Defining the Height yet Showcasing that it is not defined
+let height = 0;
+if (height) {
+    console.log("YaY! The height is defined");
+} else {
+    console.log("The height is not defined");
+}
+
