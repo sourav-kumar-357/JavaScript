@@ -109,7 +109,7 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2019);
 */
 
-
+/*
 // Operators Precedence 
 const now = 2037;
 const ageJonas = now -1991;
@@ -124,3 +124,32 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah)/2;
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+//Coding Challenges Part 01
+// Solving by taking data - 01
+const marksWeight1 = 78;
+const marksHeight1 = 1.69;
+
+const johnWeight1 = 92;
+const JohnHeight1 = 1.95;
+
+let markBMI1 = marksWeight1/(marksHeight1 ** 2);
+let johnBMI1 = johnWeight1/(JohnHeight1 ** 2);
+
+let markHigherBMI1 = markBMI1 > johnBMI1;
+console.log(markBMI1, johnBMI1, markHigherBMI1);
+
+
+// Solving by taking data - 01
+const marksWeight2 = 95;
+const marksHeight2 = 1.88;
+
+const johnWeight2 = 85;
+const JohnHeight2 = 1.76;
+
+let markBMI2 = marksWeight2/(marksHeight2 ** 2);
+let johnBMI2 = johnWeight2/(JohnHeight2 ** 2);
+
+let markHigherBMI2 = markBMI2 > johnBMI2;
+console.log(markBMI2, johnBMI2, markHigherBMI2);
