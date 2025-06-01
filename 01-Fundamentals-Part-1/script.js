@@ -392,7 +392,7 @@ switch (day) {
 */
 
 
-
+/*
 // Some more uses of Switch statements
 const day = prompt("Please enter the day");
 if (day === 'monday') {
@@ -409,3 +409,17 @@ if (day === 'monday') {
 } else {
   console.log('Not a valid day!');
 }
+*/
+
+
+
+// Statements and Expressions
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = '23 is bigger number ';
+}
+
+console.log(`I'm ${2037 - 1991} years old`);
