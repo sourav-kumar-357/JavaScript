@@ -201,6 +201,7 @@ console.log(century);
 */
 
 
+/*
 //Coding Challenges Part 01
 // Solving by taking data - 01
 const marksWeight1 = 78;
@@ -234,6 +235,16 @@ if (johnBMI2 > markBMI2) {
 } else {
     console.log("Mark has a higher BMI index (" + markBMI2 + ") than Johns BMI (" + johnBMI2 + ")");
 }
+*/
 
 
 
+// Type conversion 
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear)+ 180);
+
+console.log(Number("jonas"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
