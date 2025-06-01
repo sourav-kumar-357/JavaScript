@@ -58,3 +58,12 @@ console.log(typeof year);
 console.log(typeof null);
 */
 
+/* 
+// Coding Challenge of 7
+let isIsland = false;
+let language;
+
+console.log(typeof isIsland);
+console.log(typeof language);
+*/
+
