@@ -57,3 +57,10 @@ console.log(calAge2(2006));
 
 
 // Arrow Function
+const calAge2 = function (birthYear) {
+    return 2025 - birthYear;
+}
+
+// Arrow Function
+const calAge3 = birthYear => 2025 - birthYear;
+console.log(calAge2(2006), calAge3(2006))
