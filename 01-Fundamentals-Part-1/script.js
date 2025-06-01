@@ -1,5 +1,7 @@
+
+/*
 let js = 'amazing';
-console.log(40 + 67 - 87);
+// console.log(40 + 67 - 87);
 
 console.log('Jonas');
 console.log(23);
@@ -15,6 +17,7 @@ let Jonas_Matilda = "JM";
 let _new = 77;
 let name = "Jonas";
 
+// Naming Conventions
 let myFisrtJob = "programmer";
 let myCurrentJob = "Teacher";
 
@@ -30,3 +33,5 @@ let population = "300 M";
 console.log("Continent is " + Continent);
 console.log("Country is " + Country);
 console.log("The population is " + population);
+*/
+
