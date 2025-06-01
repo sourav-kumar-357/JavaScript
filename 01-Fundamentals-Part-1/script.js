@@ -238,7 +238,7 @@ if (johnBMI2 > markBMI2) {
 */
 
 
-
+/*
 // Type conversion 
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
@@ -248,3 +248,17 @@ console.log(Number("jonas"));
 console.log(typeof NaN);
 
 console.log(String(23), 23);
+
+
+// Type Coercion
+console.log('I am ' + 23 + " years old");
+console.log('I am ' + String(23) + " years old");
+console.log('20' - '30' + 40);
+console.log('20' * '5');
+
+// Guess the Number
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+*/
+
