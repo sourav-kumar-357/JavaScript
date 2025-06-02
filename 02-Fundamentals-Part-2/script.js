@@ -350,7 +350,7 @@ if (mark.bmi > john.bmi) {
 */
 
 
-
+/*
 // Iteration
 // console.log('Lifting weights repetition 1');
 // console.log('Lifting weights repetition 2');
@@ -368,3 +368,42 @@ if (mark.bmi > john.bmi) {
 for(let rep = 1; rep <=30; rep++) {
     console.log(`Lifting wights repetition ${rep}`);
 }
+
+*/
+
+
+//LOOPING, ARRAYS, BREAKING CONDITION
+const Anshu = [
+    'Anshu',
+    'Sharma',
+    2025-2005,
+    'Student',
+    ['Aditya', 'Indu', 'Riyanshu']
+];
+const types = [];
+
+// console.log(Anshu[0])
+// console.log(Anshu[1])
+// ...
+// console.log(Anshu[4])
+// jonas[5] does NOT exist
+
+for (let i = 0; i <Anshu.length; i++) {
+
+  // Reading from Anshu array
+  console.log(Anshu[i], typeof Anshu[i]);
+
+  // Filling types array
+  // types[i] = typeof Anshu[i];
+  types.push(typeof Anshu[i]);
+}
+console.log(types);
+
+// another example
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2025 - years[i]);
+}
+console.log(ages);
