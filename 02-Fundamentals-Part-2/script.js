@@ -248,7 +248,6 @@ console.log(bills, tips, totals);
 
 
 // OBJECTS
-//DOT vs BRACKET NOTATION
 
 //This is a normal array
 const Anshu = [
@@ -270,3 +269,44 @@ const Sourav = {
 };
 console.log(Sourav);
 */
+
+
+
+
+// Dot vs bracket Notations
+
+// This is a Function
+const Sourav = {
+    firstName: 'Sourav',
+    lastName: 'Kumar',
+    age: 2025-2006,
+    profession: 'Student',
+    friends: ['Vasu', 'Farhan', 'Asif']
+};
+console.log(Sourav);
+
+// This is the dot notation
+console.log(Sourav.firstName);
+
+// This is the Bracket notation
+console.log(Sourav['lastName']);
+
+// Complete use of Bracket notation
+const nameKey = 'Name';
+console.log(Sourav['first' + nameKey]);
+console.log(Sourav['last' + nameKey]);
+
+//console.log(Sourav.('last' + nameKey)) --> Wrong way
+
+const intrestedIn = prompt('What do you want to know about Sourav ? Choose between firstname, lastname, age, job, and friends');
+
+if (Sourav[intrestedIn]) {
+    console.log(Sourav[intrestedIn]);
+} else {
+    console.log("Wrong request choose between firstname, lastname, age, job, and friends");
+}
+
+// using both the notations
+Sourav.location = 'India';
+Sourav['State'] = 'Jharkhand';
+console.log(Sourav);
