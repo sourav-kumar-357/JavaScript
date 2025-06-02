@@ -92,3 +92,32 @@ function fruitProcessors(apples, oranges ) {
 
 console.log(fruitProcessors(2, 3));
 */
+
+
+/*
+//Function calling Function
+const calAge = function (birthYear) {
+    return 2025 - birthYear;
+}
+const yearsUntilRetirements = function (birthYear, name) {
+    const age = calAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${name} retires in ${retirement} years! `);
+        return retirement;
+    } else {
+        console.log(`${name} has already retired !`);
+        return -1;
+    }
+
+    // return `${name} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirements(1991, 'Jonas'));
+console.log(yearsUntilRetirements(1920, 'Sourav'));
+*/
+
+
+
+// 
