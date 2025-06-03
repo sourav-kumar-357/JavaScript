@@ -12,11 +12,15 @@ document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
 */
 
+
+// Computing the Secret number
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
+// Defining the score and high score
 let score = 20;
 let highScore = 0;
 
+// Initialising the check button
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
 
@@ -65,6 +69,7 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
+// Setting up the again button
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   document.querySelector('.score').textContent = score;
