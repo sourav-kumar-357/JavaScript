@@ -162,4 +162,11 @@ const letters = [...str, ' ', 'S.'];
 console.log(letters);
 console.log(...str);
 // console.log(`${...str} Schemdtmann`);
+
+
+const ingredients = [prompt("let's make pasta! Ingredients 1?"), prompt("Ingredients 2?"), prompt("Ingredient 3")];
+console.log(ingredients);
+
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+restaurant.orderPasta(...ingredients);
 */
