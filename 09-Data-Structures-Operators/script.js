@@ -125,7 +125,18 @@ const {fri: {open: o, close: c}} = openingHours;
 console.log(o, c);
 */
 
+
 //////////////////////////////////////////
+
+
+/*
+const restaurant = {
+  Name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+}; 
 
 // Spread Operators
 const arr = [7, 8, 9];
@@ -151,3 +162,4 @@ const letters = [...str, ' ', 'S.'];
 console.log(letters);
 console.log(...str);
 // console.log(`${...str} Schemdtmann`);
+*/
