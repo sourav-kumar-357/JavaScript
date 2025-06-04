@@ -289,7 +289,7 @@ add(...x);
 ///////////////////////////////////////////////////////////////
 
 
-
+/*
 // Short Circuiting with OR operators
 console.log('---- OR ----');
 // Use ANY data type, return ANY data type, short-circuiting
@@ -306,7 +306,39 @@ console.log(guests1);
 
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
+*/
 
-
-
+/*
 // Short Circuiting with AND operators
+console.log('---- AND ----');
+console.log(0 && 'Jonas');
+console.log(7 && 'Jonas');
+
+console.log('Hello' && 23 && null && 'Jonas');
+
+// Practical example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+*/
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+
+
+/*
+// The Nullish Coalescing Operator
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+// Nullish: null and undefined (NOT 0 or '')
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+*/
