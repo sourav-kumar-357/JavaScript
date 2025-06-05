@@ -73,11 +73,12 @@ const currencies = new Map([
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-/////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////
 
 
 // SLICE method
-let arr = ['a', 'b', 'c', 'd', 'e'];
+let arr = ['a', 'b', 'c', 'd', 'e']; // Show the selected part of the array
 console.log(arr.slice(2));
 console.log(arr.slice(2, 4));
 console.log(arr.slice(-2));
@@ -88,5 +89,13 @@ console.log(arr.slice());
 console.log([...arr]);
 
 // SPLICE Method
-console.log(arr.splice(2));
+console.log(arr.splice(2)); // Trims the array of the selected index and creates a Complete new array
 console.log(arr);
+console.log(arr.splice(-1));
+console.log(arr);
+
+// Reverse method of the array
+let arr1 = ['a', 'b', 'c', 'd', 'e'];
+let arr2 = ['j', 'i', 'h', 'g', 'f'];
+arr2.reverse();
+console.log([...arr1, ...arr2]);
