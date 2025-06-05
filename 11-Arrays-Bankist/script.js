@@ -145,8 +145,8 @@ console.log(arr.slice(-1));
 console.log(arr.at(-1));
 
 // string
-console.log('Anshu'.at(0));
-console.log('Anshu'.at(-1));
+console.log('Sourav'.at(0));
+console.log('Sourav'.at(-1));
 */
 
 //----------------------------------------------------------------------------------------------//
