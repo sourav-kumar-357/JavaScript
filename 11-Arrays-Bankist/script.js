@@ -252,7 +252,7 @@ console.log(movementsDescriptions);
 
 //=================================================================================================================================================//
 
-// THE FILTER METHODS
+// ---------------------(((((((((((( THE FILTER METHODS )))))))))))))--------------------//
 
 const deposits = movements.filter(function (mov, i, arr) {
   return mov > 0;
