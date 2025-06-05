@@ -17,7 +17,7 @@ const account2 = {
   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
   interestRate: 1.5,
   pin: 2222,
-}; 
+};
 
 const account3 = {
   owner: 'Steven Thomas Williams',
@@ -61,26 +61,27 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-const displayMovements = function(movements) {
+const displayMovements = function (movements) {
   containerMovements.innerHTML = ' ';
   // .textContent = 0
 
-  movements.forEach(function(mov, i) {
-    const type = mov > 0? 'deposit' : 'withdrawl' ;
+  movements.forEach(function (mov, i) {
+    const type = mov > 0 ? 'deposit' : 'withdrawl';
 
     const html = `
     <div class="movements">
         <div class="movements__row">
-          <div class="movements__type movements__type--${type}">${i+1} ${type}</div>
+          <div class="movements__type movements__type--${type}">${
+      i + 1
+    } ${type}</div>
           <div class="movements__value">${mov}</div>
         </div>
     `;
 
     containerMovements.insertAdjacentHTML('afterbegin', html);
-
   });
 };
-displayMovements(account1.movements)
+displayMovements(account1.movements);
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -92,7 +93,7 @@ const currencies = new Map([
   ['GBP', 'Pound sterling'],
 ]);
 */
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300]; 
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 /*
@@ -252,7 +253,7 @@ console.log(movementsDescriptions);
 
 //------------------------------------------------------------------------------------------------//
 
-// THE FILTER METHOD
+// THE FILTER METHODS
 
 const deposits = movements.filter(function (mov, i, arr) {
   return mov > 0;
