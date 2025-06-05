@@ -136,4 +136,33 @@ console.log(arr.at(-1));
 //////////////////////////////////////////////////////////////////////
 
 
+/*
+// The normal for of loops
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+for(const movemet of movements) {
+  if (movemet > 0) {
+    console.log(`You deposited ${movemet}`);
+  } else {
+    console.log(`You withdrew ${Math.abs(movemet)}`);
+  }
+}
+
+// The FOR-EACH loop in action 
+console.log('\n\n------For Each Method -------\n\n');
+
+movements.forEach (function(movement) {
+  if (movement > 0) {
+    console.log(`You deposited ${movement}`);
+  } else {
+    console.log(`You withdrew ${Math.abs(movement)}`);
+  }
+})
+*/
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+
+// 
