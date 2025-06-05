@@ -1,9 +1,10 @@
 'use strict';
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// BANKIST APP
+//////////////////////////////////////////////////////////////////
 
+
+/*
+// BANKIST APP
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -72,11 +73,13 @@ const currencies = new Map([
 ]);
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+*/
 
 
 ///////////////////////////////////////////////////////////////////////
 
 
+/*
 // SLICE method
 let arr = ['a', 'b', 'c', 'd', 'e']; // Show the selected part of the array
 console.log(arr.slice(2));
@@ -110,3 +113,27 @@ console.log(arr3);
 
 // JOIN methods
 console.log(arr3.join(' - '));
+*/
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+/*
+// The AT Method
+const arr = [5, 23, 67, 87, 55];
+console.log(arr[2]);
+console.log(arr.at(0));
+
+// getting last array elements
+console.log(arr.length - 1);
+console.log(arr.slice(-1));
+console.log(arr.slice(-1)[0]);
+console.log(arr.at(-1));
+*/
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+
