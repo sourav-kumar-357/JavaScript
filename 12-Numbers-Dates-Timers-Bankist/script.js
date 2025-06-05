@@ -1,11 +1,9 @@
 'use strict';
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// BANKIST APP
 
-/////////////////////////////////////////////////
-// Data
+//=================================================================================================================================================//
+
+// --------------------- DATA --------------------//
 
 // DIFFERENT DATA! Contains movement dates, currency and locale
 
@@ -51,8 +49,11 @@ const account2 = {
 
 const accounts = [account1, account2];
 
-/////////////////////////////////////////////////
-// Elements
+
+//=================================================================================================================================================//
+
+// --------------------- Elements --------------------//
+
 const labelWelcome = document.querySelector('.welcome');
 const labelDate = document.querySelector('.date');
 const labelBalance = document.querySelector('.balance__value');
@@ -78,8 +79,11 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-/////////////////////////////////////////////////
-// Functions
+
+//=================================================================================================================================================//
+
+// --------------------- FUNCTION --------------------//
+
 
 const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
@@ -151,8 +155,12 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
-///////////////////////////////////////
-// Event handlers
+
+//=================================================================================================================================================//
+
+// --------------------- EVENT HANDLER --------------------//
+
+
 let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
@@ -248,6 +256,10 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// LECTURES
+
+//=================================================================================================================================================//
+
+// --------------------- LECTURE --------------------//
+
+
+
