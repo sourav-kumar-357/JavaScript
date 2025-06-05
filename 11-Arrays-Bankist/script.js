@@ -3,7 +3,6 @@
 //////////////////////////////////////////////////////////////////
 
 
-/*
 // BANKIST APP
 // Data
 const account1 = {
@@ -62,10 +61,13 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// LECTURES
 
+
+//////////////////////////////////////////////////////////////////////
+
+
+/*
+// LECTURES
 const currencies = new Map([
   ['USD', 'United States dollar'],
   ['EUR', 'Euro'],
@@ -74,7 +76,6 @@ const currencies = new Map([
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 */
-
 
 ///////////////////////////////////////////////////////////////////////
 
@@ -164,5 +165,31 @@ movements.forEach (function(movement) {
 //////////////////////////////////////////////////////////////////////
 
 
+/*
+// For-Of loop with maps
+const currencies = new Map([ // The first one is the key and the second one is value of the map 
+  ['USD', 'United States dollar'],
+  ['EUR', 'Euro'],
+  ['GBP', 'Pound sterling'],
+]);
 
-// 
+currencies.forEach(function(value, key) {
+  console.log(`${key}: ${value}`);
+})
+
+
+// For-of loop in Sets 
+const currencyUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
+console.log(currencyUnique);
+
+currencyUnique.forEach(function(value, key) {
+  console.log(`${key}: ${value}`);
+})
+*/
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+
+// T
