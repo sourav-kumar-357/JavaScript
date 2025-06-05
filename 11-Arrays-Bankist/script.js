@@ -98,4 +98,15 @@ console.log(arr);
 let arr1 = ['a', 'b', 'c', 'd', 'e'];
 let arr2 = ['j', 'i', 'h', 'g', 'f'];
 arr2.reverse();
+console.log(arr2);
 console.log([...arr1, ...arr2]);
+
+// Concat Method
+arr1 = ['a', 'b', 'c', 'd', 'e'];
+arr2 = ['j', 'i', 'h', 'g', 'f'];
+arr2.reverse();
+let arr3 = arr1.concat(arr2);
+console.log(arr3);
+
+// JOIN methods
+console.log(arr3.join(' - '));
