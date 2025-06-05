@@ -2,7 +2,7 @@
 
 //=================================================================================================================================================//
 // BANKIST APP
-
+/*
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -81,6 +81,7 @@ const displayMovements = function (movements) {
   });
 };
 displayMovements(account1.movements);
+*/
 
 //=================================================================================================================================================//
 
@@ -226,7 +227,7 @@ checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
 //=================================================================================================================================================//
 
 // --------------------- THE MAPS METHODS --------------------//
-
+/*
 const eurToUsd = 1.1;
 
 // const movementsUSD = movements.map(function (mov) {
@@ -266,10 +267,12 @@ console.log(depositsFor);
 
 const withdrawals = movements.filter(mov => mov < 0);
 console.log(withdrawals);
+*/
 
 //=================================================================================================================================================//
 
 // --------------------- The Reduce method --------------------//
+/*
 console.log(movements);
 
 // accumulator -> SNOWBALL
@@ -315,6 +318,7 @@ const calcAverageHumanAge = function (ages) {
 const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 console.log(avg1, avg2);
+*/
 
 //=================================================================================================================================================//
 
@@ -388,7 +392,7 @@ console.log(account);
 // --------------------- LOGIN FEATURE --------------------//
 
 // IMPLEMENTING LOGIN
-
+/*
 let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
@@ -483,3 +487,8 @@ btnSort.addEventListener('click', function (e) {
   displayMovements(currentAccount.movements, !sorted);
   sorted = !sorted;
 });
+*/
+
+//=================================================================================================================================================//
+
+// --------------------- LOGIN FEATURE --------------------//
