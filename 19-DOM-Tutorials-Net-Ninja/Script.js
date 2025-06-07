@@ -13,7 +13,7 @@ console.log(search, bookList);
 
 // --------------------- Get Element By Class --------------------//
 
-const titles = document.getElementsByClassName('title');
+let titles = document.getElementsByClassName('title');
 console.log(titles);
 console.log(titles[0]);
 console.log(titles[1]);
@@ -36,4 +36,14 @@ for (let index = 0; index < lis.length; index++) {
      const element = lis[index];
      console.log(element);
 }
+
+
+//=================================================================================================================================================//
+
+// --------------------- Converting a non-Array to an Array --------------------//
+
+console.log(Array.isArray(titles));
+titles = Array.from(titles); // -->> This will covert the titles to an array in no time
+console.log(Array.isArray(titles));
+// Now converted to an Array
 
