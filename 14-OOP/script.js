@@ -112,3 +112,57 @@ Tesla.accelerate();
 Tesla.accelerate();
 Tesla.brake();
 Tesla.accelerate();
+
+
+//===========================================================================================================================================================//
+
+
+// Class expression
+
+// Class declaration
+class PersonCl {
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
+    this.birthYear = birthYear;
+  }
+
+  // Instance methods
+  calcAge() {
+    console.log(2025 - this.birthYear);
+  }
+
+  greet() {
+    console.log(`Hey ${this.fullName}`);
+  }
+
+  get age() {
+    return 2025 - this.birthYear;
+  }
+
+  // Set a property that already exists
+  set fullName(name) {
+    if (name.includes(' ')) this._fullName = name;
+    else alert(`${name} is not a full name!`);
+  }
+
+  get fullName() {
+    return this._fullName;
+  }
+
+  // Static method
+  static hey() {
+    console.log('Hey there');
+    console.log(this);
+  }
+}
+
+const jessica = new PersonCl('Sourav Kumar', 2006);
+console.log(Sara);
+jessica.calcAge();
+console.log(Mike.age);
+
+console.log(Sara.__proto__ === PersonCl.prototype);
+
+jessica.greet();
+
+const walter = new PersonCl('Riyanshu Sharma', 2005);
