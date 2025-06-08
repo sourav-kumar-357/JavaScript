@@ -10,10 +10,12 @@ console.log("hello javascript");
 3. How to change or manipulate HTML ✅
 4. manipulating CSS ✅
 5. Events Listeners (Event ko kaise suna jayega ) ✅
+6. Projects ✅
+7. 
 
 */
 
-
+/*
 //=================================================================================================================================================//
 
 // --------------------- Select elements from html --------------------//
@@ -60,3 +62,29 @@ h1.addEventListener('click', () => {
      h1.style.color = 'black'; // on click it will change the color
      h1.innerHTML = 'Meri girlFriend bahut he jyada sundar hai ';
 })
+*/
+
+
+//=================================================================================================================================================//
+
+// --------------------- Project 1 --------------------//
+
+let box = document.querySelector('p');
+
+let button = document.querySelector('button');
+
+let offButton = document.querySelector('.off-btn');
+offButton.addEventListener('click', () => {
+     box.style.scale = "1";
+     console.log('yellow');
+});
+
+let onButton = document.querySelector('.on-btn');
+onButton.addEventListener('click', () => {
+     box.style.scale = "0.5";
+     console.log('red');
+})
+
+//=================================================================================================================================================//
+
+// --------------------- Project 1 --------------------//

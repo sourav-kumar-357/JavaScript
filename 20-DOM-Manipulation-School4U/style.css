@@ -1,8 +1,11 @@
-h1 {
-  background-color: black;
-  color: red;
-}
-
 p {
-  background-color: yellow;
+  width: 500px;
+  height: 500px;
+  background-color: antiquewhite;
+  border: 5px solid black;
+  align-content: center;
+  align-items: center;
+  align-items: center;
+  scale: 0.5;
+  
 }
