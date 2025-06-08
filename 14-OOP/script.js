@@ -351,3 +351,36 @@ Kanchan.chargeBattery(87);
 console.log(Kanchan);
 Kanchan.brake();
 Kanchan.accelerate();
+
+
+
+//===========================================================================================================================================================//
+
+// OBJECT.CREATE
+Jonas = Object.create(PersonProto);
+
+StudentProto.introduce = function () {
+  console.log(`My name is ${this.firstName} and I do ${this.Job}`);
+};
+
+PersonProto = {
+  calcAge() {
+    console.log(2025 - this.birthYear);
+  },
+
+  init(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  },
+};
+
+const StudentProto = Object.create(PersonProto);
+StudentProto.init = function (firstName, birthYear, Job) {
+  PersonProto.init.call(this, firstName, birthYear);
+  this.Job = Job;
+};
+
+const Sourav = Object.create(StudentProto);
+Sourav.init('Sourav', 1991, 'Teaching');
+Sourav.introduce();
+Sourav.calcAge();
