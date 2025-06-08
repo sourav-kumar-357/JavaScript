@@ -75,9 +75,9 @@ const arr = [3, 6, 6, 5, 6, 9, 9];
 console.log(arr.__proto__);
 console.log(arr.__proto__ === Array.prototype);
 
-console.log(arr.__proto__.__proto__);
-
 console.log(arr.unique());
+
+console.log(arr.__proto__.__proto__);
 
 Array.prototype.unique = function () {
   return [...new Set(this)];
