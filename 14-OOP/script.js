@@ -166,3 +166,34 @@ console.log(Sara.__proto__ === PersonCl.prototype);
 jessica.greet();
 
 const walter = new PersonCl('Riyanshu Sharma', 2005);
+
+
+//===========================================================================================================================================================//
+
+// Creating Objects
+const PersonProto = {
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  },
+
+  init(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  },
+};
+
+const Jay = Object.create(PersonProto);
+console.log(Jay);
+Jay.name = 'Jay';
+Jay.birthYear = 2004;
+Jay.calcAge();
+
+console.log(Jay.__proto__ === PersonProto);
+
+const Anubhav = Object.create(PersonProto);
+Akanksha.init('Anubhav', 1979);
+Akanksha.calcAge();
+
+const Vijay = Object.create(PersonProto);
+Amit.init('Aisha', 1979);
+Amit.calcAge();
