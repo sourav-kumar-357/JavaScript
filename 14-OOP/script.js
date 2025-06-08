@@ -237,23 +237,23 @@ class CarCl {
     this.make = make;
     this.speed = speed;
   }
+    
+  set speedUS(speed) {
+    this.speed = speed * 1.6;
+  }
 
   accelerate() { 
     this.speed += 10;
     console.log(`${this.make} is going at ${this.speed} km/h`);
   }
 
-  brake() {
-    this.speed -= 5;
-    console.log(`${this.make} is going at ${this.speed} km/h`);
-  }
-
   get speedUS() {
     return this.speed / 1.6;
   }
-
-  set speedUS(speed) {
-    this.speed = speed * 1.6;
+    
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
   }
 }
 
@@ -265,3 +265,45 @@ ford.brake();
 ford.speedUS = 50;
 console.log(ford); 
 */
+
+
+//===========================================================================================================================================================//
+
+// Inheritance between Classes
+Person = function(firstName, birthYear) {
+   
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+
+const Student = function(firstName, birthYear, course) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+  this.course = course;
+};
+
+Person.prototype.calcAge = function () {
+  console.log(2025 - this.birthYear);
+};
+
+// Linking prototypes
+Student.prototype = Object.create(Person.prototype);
+
+Student.prototype.introduce = function () {
+  console.log(`My name is ${this.firstName} and I study ${this.course}`);
+};
+
+const Akanksha = new Student('Jonas', 1991, 'geography');
+Akanksha.introduce();
+Akanksha.calcAge();
+
+console.log(Akanksha instanceof Student);
+console.log(Akanksha instanceof Person);
+console.log(Akanksha instanceof Object);
+
+Student.prototype.constructor = Student;
+console.dir(Student.prototype.constructor);
+
+console.log(Akanksha.__proto__);
+console.log(Akanksha.__proto__.__proto__);
+
