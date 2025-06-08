@@ -197,3 +197,25 @@ Akanksha.calcAge();
 const Vijay = Object.create(PersonProto);
 Amit.init('Aisha', 1979);
 Amit.calcAge();
+
+
+//===========================================================================================================================================================//
+
+// getter and Setter
+const account = {
+  owner: 'Jonas',
+  movements: [20, 53, 20, 37],
+
+  get latest() {
+    return this.movements.slice(-1).pop();
+  },
+
+  set latest(mov) {
+    this.movements.push(mov);
+  },
+};
+
+console.log(account.latest);
+
+account.latest = 50;
+console.log(account.movements);
