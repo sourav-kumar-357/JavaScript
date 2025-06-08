@@ -384,3 +384,67 @@ const Sourav = Object.create(StudentProto);
 Sourav.init('Sourav', 1991, 'Teaching');
 Sourav.introduce();
 Sourav.calcAge();
+
+
+//===========================================================================================================================================================//
+
+// coding Challenge 04
+class SuperCar {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+    return this;
+  }
+  
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+    return this;
+  }
+  
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} is going at ${this.speed} km/h`);
+  }
+  
+  set speedUS(speed) {
+    this.speed = speed * 1.6;
+  }
+
+  get speedUS() {
+    return this.speed / 1.6;
+  }
+}
+
+class normalCar extends SuperCar {
+  #charge
+
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.#charge = charge;
+  }
+
+  accelerate() {
+    this.speed += 20;
+    this.#charge--;
+    console.log(`${this.make} is going at ${this.speed} km/h, with a charge of ${this.#charge}`);
+    return this;
+  }
+
+  chargeBattery(chargeTo) {
+    this.#charge = chargeTo;
+    return this;
+  }
+}
+
+const Special = new normalCar('Special', 120, 23);
+console.log(Special);
+Special.accelerate().accelerate().brake().chargeBattery(63).accelerate().brake;
+
+console.log(Special.speedUS);
+
