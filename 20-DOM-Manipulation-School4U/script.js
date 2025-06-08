@@ -1,4 +1,4 @@
-console.log("hello javascript");
+// console.log("hello javascript");
 
 //=================================================================================================================================================//
 
@@ -11,7 +11,6 @@ console.log("hello javascript");
 4. manipulating CSS ✅
 5. Events Listeners (Event ko kaise suna jayega ) ✅
 6. Projects ✅
-7. 
 
 */
 
@@ -69,6 +68,7 @@ h1.addEventListener('click', () => {
 
 // --------------------- Project 1 --------------------//
 
+/*
 let box = document.querySelector('p');
 
 let button = document.querySelector('button');
@@ -84,7 +84,13 @@ onButton.addEventListener('click', () => {
      box.style.scale = "0.5";
      console.log('red');
 })
+*/
 
 //=================================================================================================================================================//
 
-// --------------------- Project 1 --------------------//
+// --------------------- Pillar 1 --------------------//
+
+console.log("I am a good boy!");
+let a = document.querySelectorAll('div');
+console.log(a);
+
