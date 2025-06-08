@@ -86,6 +86,13 @@ Array.prototype.unique = function () {
 const h1 = document.querySelector('h1');
 console.dir(x => x + 1);
 
+/*
+const arr = [3, 6, 6, 5, 6, 9, 9]; // new Array === []
+console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype);
+
+console.log(arr.__proto__.__proto__);
+*/
 
 //===========================================================================================================================================================//
 
@@ -219,3 +226,6 @@ console.log(account.latest);
 
 account.latest = 50;
 console.log(account.movements);
+
+
+//===========================================================================================================================================================//
