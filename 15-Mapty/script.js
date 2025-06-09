@@ -111,6 +111,12 @@ class App {
     });
   }
 
+  _showForm(mapE) {
+    this.#mapEvent = mapE;
+    form.classList.remove('hidden');
+    inputDistance.focus();
+  }
+
   _loadMap(position) {
     const { latitude } = position.coords;
     const { longitude } = position.coords;
