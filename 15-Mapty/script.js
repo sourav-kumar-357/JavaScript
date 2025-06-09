@@ -235,6 +235,27 @@ class App {
       .openPopup();
   }
 
+  _setLocalStorage() {
+    localStorage.setItem('workouts', JSON.stringify(this.#workouts));
+  }
+
+  _getLocalStorage() {
+    const data = JSON.parse(localStorage.getItem('workouts'));
+
+    if (!data) return;
+
+    this.#workouts = data;
+
+    this.#workouts.forEach(work => {
+      this._renderWorkout(work);
+    });
+  }
+
+  reset() {
+    localStorage.removeItem('workouts');
+    location.reload();
+  }
+
   _renderWorkout(workout) {
     let html = `
       <li class="workout workout--${workout.type}" data-id="${workout.id}">
@@ -310,30 +331,10 @@ class App {
     });
   }
 
-  _setLocalStorage() {
-    localStorage.setItem('workouts', JSON.stringify(this.#workouts));
-  }
-
-  _getLocalStorage() {
-    const data = JSON.parse(localStorage.getItem('workouts'));
-
-    if (!data) return;
-
-    this.#workouts = data;
-
-    this.#workouts.forEach(work => {
-      this._renderWorkout(work);
-    });
-  }
-
-  reset() {
-    localStorage.removeItem('workouts');
-    location.reload();
-  }
 }
 
 
-const app = new App();
+const Genius = new App();
 
 
 //===========================================================================================================================================================//
