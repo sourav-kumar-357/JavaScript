@@ -493,13 +493,6 @@ whereAmI = async function () {
 };
 
 console.log('1: Will get location');
-// const city = whereAmI();
-// console.log(city);
-
-// whereAmI()
-//   .then(city => console.log(`2: ${city}`))
-//   .catch(err => console.error(`2: ${err.message} 💥`))
-//   .finally(() => console.log('3: Finished getting location'));
 
 (async function () {
   try {
@@ -512,20 +505,9 @@ console.log('1: Will get location');
 })();
 
 
-///////////////////////////////////////
 // Running Promises in Parallel
 const get3Countries = async function (c1, c2, c3) {
   try {
-    // const [data1] = await getJSON(
-    //   `https://restcountries.com/v2/name/${c1}`
-    // );
-    // const [data2] = await getJSON(
-    //   `https://restcountries.com/v2/name/${c2}`
-    // );
-    // const [data3] = await getJSON(
-    //   `https://restcountries.com/v2/name/${c3}`
-    // );
-    // console.log([data1.capital, data2.capital, data3.capital]);
 
     const data = await Promise.all([
       getJSON(`https://restcountries.com/v2/name/${c1}`),
@@ -539,10 +521,6 @@ const get3Countries = async function (c1, c2, c3) {
 };
 get3Countries('portugal', 'canada', 'tanzania');
 
-
-///////////////////////////////////////
-// Other Promise Combinators: race, allSettled and any
-// Promise.race
 (async function () {
   const res = await Promise.race([
     getJSON(`https://restcountries.com/v2/name/italy`),
@@ -591,9 +569,6 @@ Promise.any([
   .then(res => console.log(res))
   .catch(err => console.error(err));
 
-///////////////////////////////////////
-// Coding Challenge #3
-
 /*
 const wait = function (seconds) {
   return new Promise(function (resolve) {
@@ -620,26 +595,6 @@ const createImage = function (imgPath) {
 };
 
 let currentImg;
-
-// createImage('img/img-1.jpg')
-//   .then(img => {
-//     currentImg = img;
-//     console.log('Image 1 loaded');
-//     return wait(2);
-//   })
-//   .then(() => {
-//     currentImg.style.display = 'none';
-//     return createImage('img/img-2.jpg');
-//   })
-//   .then(img => {
-//     currentImg = img;
-//     console.log('Image 2 loaded');
-//     return wait(2);
-//   })
-//   .then(() => {
-//     currentImg.style.display = 'none';
-//   })
-//   .catch(err => console.error(err));
 
 // PART 1
 const loadNPause = async function () {
