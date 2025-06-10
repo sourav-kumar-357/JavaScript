@@ -320,14 +320,19 @@ const getPosition = function () {
 
 const whereAmI = function () {
   getPosition()
+    .then(res => {
+      if (!res.ok) throw new Error(`Problem with geocoding ${res.status}`);
+      return res.json();
+    })
+    .then(res => {
+      if (!res.ok) throw new Error(`Country not found (${res.status})`);
+
+      return res.json();
+    })
     .then(pos => {
       const { latitude: lat, longitude: lng } = pos.coords;
 
       return fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`);
-    })
-    .then(res => {
-      if (!res.ok) throw new Error(`Problem with geocoding ${res.status}`);
-      return res.json();
     })
     .then(data => {
       console.log(data);
@@ -335,13 +340,8 @@ const whereAmI = function () {
 
       return fetch(`https://restcountries.com/v2/name/${data.countryCode}`);
     })
-    .then(res => {
-      if (!res.ok) throw new Error(`Country not found (${res.status})`);
-
-      return res.json();
-    })
     .then(data => renderCountry(data[0]))
-    .catch(err => console.error(`${err.message} 💥`));
+    .catch(err => console.error(`${err.message} `));
 };
 
 btn.addEventListener('click', whereAmI);
