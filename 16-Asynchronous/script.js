@@ -565,7 +565,8 @@ Promise.any([
   Promise.resolve('Another success'),
 ])
   .then(res => console.log(res))
-  .catch(err => console.error(err));
+  .catch(err => console.error(err));2
+  5
 
 wait = function (seconds) {
   return new Promise(function (resolve) {
