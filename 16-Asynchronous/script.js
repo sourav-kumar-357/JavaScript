@@ -11,7 +11,6 @@
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
-
 const renderError = function (msg) {
   countriesContainer.insertAdjacentText('beforeend', msg);
   countriesContainer.style.opacity = 1;
@@ -254,7 +253,7 @@ whereAmI(52.508, 13.381);
 
 //===========================================================================================================================================================//
 
-// The Event Loop 
+// The Event Loop
 console.log('Test start');
 setTimeout(() => console.log('0 sec timer'), 0);
 Promise.resolve('Resolved promise 1').then(res => console.log(res));
@@ -265,7 +264,6 @@ Promise.resolve('Resolved promise 2').then(res => {
 });
 
 console.log('Test end');
-
 
 //===========================================================================================================================================================//
 
@@ -307,13 +305,11 @@ wait(1)
 Promise.resolve('abc').then(x => console.log(x));
 Promise.reject(new Error('Problem!')).catch(x => console.error(x));
 
-
 //===========================================================================================================================================================//
 
 // Geolocation API
 const getPosition = function () {
   return new Promise(function (resolve, reject) {
-
     navigator.geolocation.getCurrentPosition(resolve, reject);
   });
 };
@@ -332,7 +328,9 @@ const whereAmI = function () {
     .then(pos => {
       const { latitude: lat, longitude: lng } = pos.coords;
 
-      return fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`);
+      return fetch(
+        `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`
+      );
     })
     .then(data => {
       console.log(data);
@@ -345,7 +343,6 @@ const whereAmI = function () {
 };
 
 btn.addEventListener('click', whereAmI);
-
 
 //===========================================================================================================================================================//
 
@@ -416,7 +413,9 @@ whereAmI = async function () {
     const { latitude: lat, longitude: lng } = pos.coords;
 
     // Reverse geocoding
-    const resGeo = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`);
+    const resGeo = await fetch(
+      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`
+    );
     if (!resGeo.ok) throw new Error('Problem getting location data');
 
     const dataGeo = await resGeo.json();
@@ -426,10 +425,10 @@ whereAmI = async function () {
     const res = await fetch(
       `https://restcountries.com/v2/name/${dataGeo.countryCode}`
     );
-    
+
     // BUG in video:
     // if (!resGeo.ok) throw new Error('Problem getting country');
-    
+
     // FIX:
     if (!res.ok) throw new Error('Problem getting country');
 
@@ -454,7 +453,6 @@ console.log('FIRST');
 //   alert(err.message);
 // }
 
-
 ///////////////////////////////////////
 // Returning Values from Async Functions
 getPosition = function () {
@@ -470,7 +468,9 @@ whereAmI = async function () {
     const { latitude: lat, longitude: lng } = pos.coords;
 
     // Reverse geocoding
-    const resGeo = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`);
+    const resGeo = await fetch(
+      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}`
+    );
     if (!resGeo.ok) throw new Error('Problem getting location data');
     const dataGeo = await resGeo.json();
 
@@ -504,11 +504,9 @@ console.log('1: Will get location');
   console.log('3: Finished getting location');
 })();
 
-
 // Running Promises in Parallel
 const get3Countries = async function (c1, c2, c3) {
   try {
-
     const data = await Promise.all([
       getJSON(`https://restcountries.com/v2/name/${c1}`),
       getJSON(`https://restcountries.com/v2/name/${c2}`),
@@ -569,8 +567,7 @@ Promise.any([
   .then(res => console.log(res))
   .catch(err => console.error(err));
 
-/*
-const wait = function (seconds) {
+wait = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(resolve, seconds * 1000);
   });
@@ -628,4 +625,3 @@ const loadAll = async function (imgArr) {
   }
 };
 loadAll(['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg']);
-*/
