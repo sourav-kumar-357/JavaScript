@@ -338,13 +338,10 @@ f();
 console.dir(f);
 
 // Re-assigning f function
-
-
 h();
 f();
 console.dir(f);
 
-                                         //*****  Example - 2 *****//
 
 const boardPassengers = function (n, wait) {
   const perGroup = n / 3;
@@ -361,10 +358,7 @@ const perGroup = 1000;
 boardPassengers(180, 3);
 boardPassengers(180, 3); 
 
-
-
-    //**** Challenge - 2 ****//
-
+//**** Challenge - 2 ****//
 (function (){
   const header = document.querySelector('h1');
   header.style.color = 'red';

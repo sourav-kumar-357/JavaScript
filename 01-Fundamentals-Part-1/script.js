@@ -318,7 +318,7 @@ if (favourite !== 23) {
 */
 
 
-/*
+
 // AND Operators 
 const hasDriversLicense = true;
 const hasGoodVision = false;
@@ -339,10 +339,9 @@ const hasDriversLicense3 = true;
 const hasGoodVision3 = true;
 console.log(hasDriversLicense3 && hasGoodVision3);
 console.log(hasDriversLicense3 || hasGoodVision3);
-*/
 
 
-/*
+
 // Coding Challenges 3
 const scoreDolphins = (97+112+80)/3;
 const scoreKoalas = (100+95+50)/3;
@@ -357,7 +356,7 @@ if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 else {
     console.log('No one win the trophy');
 }
-*/
+
 
 
 /*

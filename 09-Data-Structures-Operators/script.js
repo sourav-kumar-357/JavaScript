@@ -908,7 +908,7 @@ checkBaggage('Got some snacks and a gun for protection');
 */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*
+
 // Working With Strings - Part 3
 
 // Split and join
@@ -959,12 +959,12 @@ const planesInLine = function (n) {
 planesInLine(5);
 planesInLine(3);
 planesInLine(12);
-*/
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////------------CODING CHALLENGE #4----------------//////////////////////
-/*
+
 document.body.append(document.createElement('textarea'));
 document.body.append(document.createElement('button'));
 
@@ -982,6 +982,6 @@ document.querySelector('button').addEventListener('click', function () {
     console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
   }
 });
-*/
+
 
 ////////////////////////////////////////////////////////////////////////////////////

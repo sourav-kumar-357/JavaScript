@@ -497,7 +497,6 @@ const options = {
   currency: 'EUR',
   // useGrouping: false,
 };
-
 console.log('US:      ', new Intl.NumberFormat('en-US', options).format(num1));
 console.log('Germany: ', new Intl.NumberFormat('de-DE', options).format(num1));
 console.log('Syria:   ', new Intl.NumberFormat('ar-SY', options).format(num1));
@@ -505,13 +504,10 @@ console.log(
   navigator.language,
   new Intl.NumberFormat(navigator.language, options).format(num1)
 );
-
-
 //=================================================================================================================================================//
 
 // --------------------- Timers --------------------//
 
-// setTimeout
 const ingredients = ['olives', 'spinach'];
 const pizzaTimer = setTimeout(
   (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2} 🍕`),

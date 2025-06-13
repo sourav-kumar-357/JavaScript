@@ -272,7 +272,7 @@ console.log(Sourav);
 
 
 
-/*
+
 // Dot vs bracket Notations
 
 // This is a Function
@@ -310,7 +310,6 @@ if (Sourav[intrestedIn]) {
 Sourav.location = 'India';
 Sourav['State'] = 'Jharkhand';
 console.log(Sourav);
-*/
 
 
 /*
@@ -437,7 +436,6 @@ for (let exercise = 1; exercise < 4; exercise++) {
 */
 
 
-/*
 // WHILE LOOP
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}`);
@@ -456,9 +454,7 @@ while (dice !== 6) {
   dice = Math.trunc(Math.random() * 6) + 1;
   if (dice === 6) console.log('Loop is about to end...');
 }
-*/
 
-/*
 // CODING CHALLENGE #4
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -485,7 +481,6 @@ const calcAverage = function (arr) {
 console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
-*/
 
 
 

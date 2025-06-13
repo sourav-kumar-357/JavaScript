@@ -128,7 +128,6 @@ f();
 */
 
 
-/*
 // Regular Functions vs. Arrow Functions
 // var firstName = 'Matilda';
 
@@ -138,13 +137,6 @@ const jonas = {
   calcAge: function () {
     // console.log(this);
     console.log(2037 - this.year);
-
-    // Solution 1
-    // const self = this; // self or that
-    // const isMillenial = function () {
-    //   console.log(self);
-    //   console.log(self.year >= 1981 && self.year <= 1996);
-    // };
 
     // Solution 2
     const isMillenial = () => {
@@ -175,7 +167,7 @@ var addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8);
-*/
+
 
 
 // Object References in Practice (Shallow vs. Deep Copies)
